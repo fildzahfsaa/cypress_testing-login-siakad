@@ -29,7 +29,7 @@ describe('Testing Login Siakad', () => {
         cy.contains('Username harus diisi')
     })
 
-    it('Melakukan login dengan username benar dan password terisi', () =>{
+    it('Melakukan login dengan username kosong dan password terisi', () =>{
         cy.visit('http://siakad.polinema.ac.id/')
         cy.get('#password').type('passwordbenar')
         cy.get('.btn-success').click()
